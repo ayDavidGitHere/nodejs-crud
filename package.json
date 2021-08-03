@@ -1,0 +1,36 @@
+{
+  "name": "signupapp",
+  "version": "1.0.0",
+  "description": "Node js Signup app",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "request": "*",
+    "socket.io": "*",
+    "express": "*",
+
+    "mongoose": "*",
+    "crypto": "*",
+    "http": "*",
+    "body-parser": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aydavidgithere/nodejs-crud.git"
+  },
+  "keywords": [
+    "nodejs",
+    "signup",
+    "startuppattern",
+    "aydavid"
+  ],
+  "author": "aydavidgithere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aydavidgithere/nodejs-crud/issues"
+  },
+  "homepage": "https://github.com/aydavidgithere/nodejs-crud#readme"
+}
