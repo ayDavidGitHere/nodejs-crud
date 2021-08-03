@@ -15,7 +15,13 @@ var app = express();
 var connectRes = "Success :)";
 
 //Connect to Mongo DB
-mongoose.connect(config.getDBString());
+mongoose.connect(config.getDBString(),
+    {useNewUrlParser: true, useUnifiedTopology: true},
+    function(err){
+        if(err){console.error(err); connectRes="Failed"}
+        else{console.log("Connected to MONGODB Server at - "+config.db.PORT)}
+    }
+);
 var db = mongoose.connection;
 db.on('error', function(){    
     connectRes = "Failed :("; console.error("\n A db error occured.\n");
@@ -28,5 +34,5 @@ app.get("/", function(req, res){
 })
 //Start the server
 app.listen(config.PORT, function(){
-    console.log('Server started at - '+ config.URL+ ":" +config.PORT)
+    console.log('Connected to EXPRESS Server at - '+ config.URL+ ":" +config.PORT)
 });

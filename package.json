@@ -32,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/aydavidgithere/nodejs-crud/issues"
   },
-  "homepage": "https://github.com/aydavidgithere/nodejs-crud#readme"
+  "homepage": "https://github.com/aydavidgithere/nodejs-crud#readme",
+  "localdir": "/storage/emulated/0/compilerinternalsonyx/projects/nodejs/signupapp"
 }
