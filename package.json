@@ -11,7 +11,7 @@
     "request": "*",
     "socket.io": "*",
     "express": "*",
-
+    "mongodb": "*",
     "mongoose": "*",
     "crypto": "*",
     "http": "*",
